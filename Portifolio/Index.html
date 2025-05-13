@@ -1,30 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - introdução</title>
-    <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio - Introdução</title>
+  <style>
+    :root {
+      --preto: #0d0d0d;
+      --branco: #ffffff;
+      --vermelho: #e63946;
+      --amarelo: #ffcb05;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--preto);
+      color: var(--branco);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
     .foto-perfil {
-        width: 150px;         /* tamanho da imagem */
-        height: 150px;        /* deixa a imagem quadrada */
-        object-fit: cover;    /* evita distorções */
-        border-radius: 50%;   /* deixa a imagem circular */
-        border: 3px solid #333; /* opcional: borda ao redor */
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--vermelho);
+      box-shadow: 0 8px 16px rgba(255,255,255,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .foto-perfil:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.4em;
+      margin-top: 20px;
+      color: var(--amarelo);
+    }
+
+    h3 {
+      font-size: 1.4em;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 15px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--branco);
+      background-color: var(--vermelho);
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+    }
+
+    nav ul li a:hover {
+      background-color: var(--amarelo);
+      color: var(--preto);
+    }
+
+    .intro {
+      max-width: 600px;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: var(--branco);
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(255,255,255,0.05);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8em;
       }
 
-      </style>
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
-<img src="https://media.licdn.com/dms/image/v2/D4D03AQHOiuRA5M7U2g/profile-displayphoto-shrink_800_800/B4DZS3kcn9HAAk-/0/1738246574443?e=1752105600&v=beta&t=dpf-jm0bJUChN3ywaOcHjcu3BdrhrJ8DsNiSW_FG894" alt="Minha foto" class="foto-perfil"> 
-<H3>Desenvolvedor Web e Programador</H3>
 <body>
-    <Nav>
-        <ul>
-            <li><a href="">Pagina inicial</a></li>
-            <li><a href="sobre.html">Sobre Mim</a></li>
-            <li><a href="Projetos.html">Meus projetos</a></li>
-            <li><a href="Contatos.html">Contatos</a></li>
-        </ul>
-    </Nav>
+  <header>
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQHOiuRA5M7U2g/profile-displayphoto-shrink_800_800/B4DZS3kcn9HAAk-/0/1738246574443?e=1752105600&v=beta&t=dpf-jm0bJUChN3ywaOcHjcu3BdrhrJ8DsNiSW_FG894" alt="Minha foto" class="foto-perfil">
+    <h1>Olá, sou Davi Freitas!</h1>
+    <h3>Desenvolvedor Web e Programador</h3>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Página Inicial</a></li>
+      <li><a href="sobre.html">Sobre Mim</a></li>
+      <li><a href="Projetos.html">Meus Projetos</a></li>
+      <li><a href="Contatos.html">Contatos</a></li>
+    </ul>
+  </nav>
+
+  <div class="intro">
+    <p>Bem-vindo ao meu portfólio! Aqui você encontrará mais sobre minha trajetória como desenvolvedor, meus projetos favoritos e como entrar em contato. Sinta-se à vontade para explorar.</p>
+  </div>
 </body>
 </html>

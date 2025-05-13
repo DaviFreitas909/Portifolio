@@ -4,34 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Contato</title>
+  <!-- Link para o Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
+    /* Estilo do body */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f7f7f7;
+      background-color: #121212; /* Fundo escuro */
+      color: #f5f5f5; /* Texto branco */
     }
+
+    /* Estilo da seção de informações de contato */
     .info-contato {
       text-align: center;
       margin-top: 40px;
-      font-size: 14px;
-      color: #666;
+      font-size: 16px;
     }
 
+    /* Estilo para os links */
     .info-contato a {
-      color: #0077cc;
+      color: #FFC107; /* Cor amarela para os links */
       text-decoration: none;
+      font-size: 18px;
+      margin: 0 15px;
+      transition: color 0.3s ease;
     }
+
+    /* Efeito de hover nos links */
+    .info-contato a:hover {
+      color: #FF5733; /* Cor vermelha no hover */
+    }
+
+    /* Estilo para ícones */
+    .info-contato i {
+      margin-right: 8px;
+    }
+
+    /* Texto para o parágrafo */
+    .info-contato p {
+      color: #B0B0B0; /* Cor cinza para o texto */
+      font-size: 18px;
+    }
+
   </style>
 </head>
 <body>
-    <div class="info-contato">
-      <p>entre em contato diretamente Para colaboração ou contratação empregativa;</p>
-      <p>Email: <a href="mailto:seunome@email.com">davifreitasdebrito909@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/davi-freitas-52647b34a" target="_blank">Davi Freitas De brito</a></p>
-      <p>GItHub: <a href="https://github.com/DaviFreitas909" target="_blank">Davi Freitas</a></p>
-    </div>
-  </section>
-
+  <div class="info-contato">
+    <p>Entre em contato diretamente para colaboração ou contratação empregativa:</p>
+    <p>Email: <a href="mailto:seunome@email.com"><i class="fas fa-envelope"></i>davifreitasdebrito909@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/davi-freitas-52647b34a" target="_blank"><i class="fab fa-linkedin"></i>Davi Freitas De Brito</a></p>
+    <p>GitHub: <a href="https://github.com/DaviFreitas909" target="_blank"><i class="fab fa-github"></i>Davi Freitas</a></p>
+  </div>
 </body>
 </html>

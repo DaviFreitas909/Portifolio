@@ -1,25 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Projetos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio - Projetos</title>
+  <style>
+    :root {
+      --fundo: #0d0d0d;
+      --texto: #ffffff;
+      --vermelho: #e63946;
+      --amarelo: #ffcb05;
+      --cinza-card: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--fundo);
+      color: var(--texto);
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 40px;
+      color: var(--amarelo);
+    }
+
+    .projetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: var(--cinza-card);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #333;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      border: 2px solid var(--vermelho);
+    }
+
+    .card h3 {
+      color: var(--amarelo);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin-bottom: 15px;
+      color: #ddd;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 5px;
+      text-decoration: none;
+      background-color: var(--vermelho);
+      color: var(--texto);
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .card a:hover {
+      background-color: var(--amarelo);
+      color: #000;
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1em;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-    <h2>Meus Projetos Html</h2>
-<div>
-    <H3>Calculadoura</H3>
-    <P>Projeto de uma calculadoura feita com JS, Html e CSS</P>
-    <img src="Anotação 2025-05-07 155016.png" alt="Calculadoura"> <br>
-    <a href="https://davifreitas909.github.io/Calculadoura/" target="_blank">Veja Esse Projeto</a> <br>
-    <a href="https://github.com/DaviFreitas909/Calculadoura/blob/main/index.html" target="_blank">Veja codigo bruto</a>
-</div>
-<div>
-    <h3>Site de Mercadinho</h3>
-    <p>Projeto Mini-Site de mercado usando Html e CSS</p>
-    <img src="Anotação 2025-05-07 161244.png" alt="Mercado Html"> <br>
-    <a href="https://davifreitas909.github.io/Mercadinho/" target="_blank">Ver Este Projeto</a> <br>
-    <a href="https://github.com/DaviFreitas909/Mercadinho/blob/main/index.html" target="_blank">Ver o Codigo Bruto</a>
-</div>
-<P>Projetos Basicos em Html Para apresentaçao</P>
+  <h2>Meus Projetos HTML</h2>
+
+  <section class="projetos">
+    <div class="card">
+      <h3>Calculadora</h3>
+      <p>Projeto de uma calculadora feita com JavaScript, HTML e CSS.</p>
+      <img src="Anotação 2025-05-07 155016.png" alt="Calculadora">
+      <br>
+      <a href="https://davifreitas909.github.io/Calculadoura/" target="_blank">Ver Projeto</a>
+      <a href="https://github.com/DaviFreitas909/Calculadoura/blob/main/index.html" target="_blank">Código Fonte</a>
+    </div>
+
+    <div class="card">
+      <h3>Site de Mercadinho</h3>
+      <p>Mini-site de mercado desenvolvido com HTML e CSS puro.</p>
+      <img src="Anotação 2025-05-07 161244.png" alt="Mercado HTML">
+      <br>
+      <a href="https://davifreitas909.github.io/Mercadinho/" target="_blank">Ver Projeto</a>
+      <a href="https://github.com/DaviFreitas909/Mercadinho/blob/main/index.html" target="_blank">Código Fonte</a>
+    </div>
+  </section>
+
+  <p class="footer-note">Estes são projetos básicos em HTML para apresentação e prática.</p>
+</body>
 </html>
